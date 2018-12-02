@@ -20,6 +20,7 @@ public class CategoriaResource {
 	@Autowired
 	private CategoriaService service;
 	
+	//Mapeia a requisição para buscar a categoria por id
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public ResponseEntity<?> find(@PathVariable Integer id) {
 		
